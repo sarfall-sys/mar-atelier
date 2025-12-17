@@ -1,9 +1,28 @@
 import appData from '../data/appData.json';
 
-export const app = appData.app;
-export const routes = appData.routes;
-export const services = appData.services;
-export const contact = appData.contact;
-export const pricing = appData.pricing;
+class DataLoader {
+    static getAppData() {
+        return appData;
+    }
 
-export default appData;
+    static getRoutes() {
+        return appData.routes;
+    }
+    static getServices() {
+        return appData.services;
+    }
+
+    static getPricing() {
+        return appData.pricing;
+    }
+    static getTestimonials() {
+        return appData.testimonials;
+    }
+    static getAboutInfo() {
+        return appData.about;
+    }
+
+}
+
+
+export default DataLoader;

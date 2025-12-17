@@ -1,16 +1,45 @@
 @import "tailwindcss";
+
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
 }
 
+[data-theme="light"] {
+  --bg-color: var(--color-neutral);
+  --text-color: var(--color-neutral-dark);
+}
+
+[data-theme="dark"] {
+  --bg-color: var(--color-neutral-dark);
+  --text-color: var(--color-neutral-light);
+}
+
+@theme {
+  --color-*: initial;
+  --color-primary: #f27a8d;
+  --color-primary-light: #f8a9b4;
+  --color-primary-dark: #d62f5a;
+  --color-secondary: #bd95f0;
+  --color-secondary-light: #d6bff7;
+  --color-secondary-dark: #8c4ad9;
+  --color-accent: #f5c057;
+  --color-accent-light: #f9d98f;
+  --color-accent-dark: #e18c1a;
+  --color-neutral: #e8e9ef;
+  --color-neutral-dark: #f5f5f8;
+  --color-neutral-light: #bcbdc9;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

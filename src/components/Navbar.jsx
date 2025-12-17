@@ -2,8 +2,10 @@ import { FiScissors } from "react-icons/fi";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { BiMenu } from "react-icons/bi";
-import routes from "../utils/dataLoader";
+import DataLoader from "../utils/dataLoader";
 function Navbar() {
+
+  const routeList = DataLoader.getRoutes();
   const [isMobileOpen, setIsMobileOpen] = useState(false);
 
   const handleMenuToggle = () => {
@@ -11,7 +13,7 @@ function Navbar() {
   };
   return (
     <>
-      <nav className="sticky top-0 z-50 bg-white shadow-md px-4 py-3">
+      <nav className="sticky top-0 z-50 bg-neutral-light dark:bg-color shadow-md px-4 py-3">
         {/*Container */}
         <div className="">
           {/*Logo */}
@@ -26,7 +28,7 @@ function Navbar() {
           <div className="hidden md:flex space-x-6">
             <div className="flex justify-center space-x-4">
               {
-                routes.routes.map((route, index) => {
+                routeList.map((route, index) => {
                   if (route.name === "Home") return null;
                   return (
                     <Link
@@ -53,7 +55,7 @@ function Navbar() {
               </button>
               {isMobileOpen && (
                 <div className="flex flex-col p-4 space-y-4 bg-white shadow-md">
-                  {routes.map((route, index) => { 
+                  {routesList.map((route, index) => { 
                     if (route.name === "Home") return null;
                     return (
                       <Link
