@@ -1,0 +1,322 @@
+ {
+  "app": {
+    "name": "Costura Perfecta",
+    "description": "Servicios profesionales de costura y arreglos de ropa",
+    "logo": "/logo.png",
+    "favicon": "/favicon.ico",
+    "language": "es",
+    "currency": "EUR"
+  },
+  
+  "routes": [
+    {
+      "path": "/",
+      "name": "Inicio",
+      "component": "Home",
+      "exact": true,
+      "showInNav": true,
+      "navOrder": 1,
+      "icon": "FiHome"
+    },
+    {
+      "path": "/services",
+      "name": "Servicios",
+      "component": "Services",
+      "exact": true,
+      "showInNav": true,
+      "navOrder": 2,
+      "icon": "FiScissors"
+    },
+    {
+      "path": "/about",
+      "name": "Nosotros",
+      "component": "About",
+      "exact": true,
+      "showInNav": true,
+      "navOrder": 3,
+      "icon": "FiUsers"
+    },
+    {
+      "path": "/contact",
+      "name": "Contacto",
+      "component": "Contact",
+      "exact": true,
+      "showInNav": true,
+      "navOrder": 4,
+      "icon": "FiMail"
+    }
+  ],
+  
+  "services": [
+    {
+      "id": "basic-repairs",
+      "title": "Arreglos Básicos",
+      "slug": "basic-repairs",
+      "description": "Reparaciones rápidas y eficientes para el día a día",
+      "icon": "FiScissors",
+      "category": "repairs",
+      "priceRange": {
+        "min": 5,
+        "max": 20,
+        "currency": "EUR"
+      },
+      "features": [
+        "Bajos de pantalones",
+        "Costuras rotas",
+        "Cierres y cremalleras",
+        "Botones y ojales",
+        "Remiendos discretos"
+      ],
+      "deliveryTime": "24-48 horas",
+      "popular": true
+    },
+    {
+      "id": "alterations",
+      "title": "Transformaciones",
+      "slug": "alterations",
+      "description": "Moderniza y ajusta tus prendas a la medida",
+      "icon": "FiRefreshCw",
+      "category": "transformations",
+      "priceRange": {
+        "min": 15,
+        "max": 50,
+        "currency": "EUR"
+      },
+      "features": [
+        "Cambio de tallas",
+        "Rediseño de prendas",
+        "Acortar mangas",
+        "Ajuste de cintura",
+        "Modernización de estilo"
+      ],
+      "deliveryTime": "3-5 días",
+      "popular": true
+    },
+    {
+      "id": "special-services",
+      "title": "Servicios Especiales",
+      "slug": "special-services",
+      "description": "Trabajos especializados para ocasiones importantes",
+      "icon": "FiStar",
+      "category": "special",
+      "priceRange": {
+        "min": 20,
+        "max": 100,
+        "currency": "EUR"
+      },
+      "features": [
+        "Trajes y vestidos formales",
+        "Vestidos de novia",
+        "Ropa de fiesta",
+        "Cuero y piel",
+        "Tejidos delicados"
+      ],
+      "deliveryTime": "5-10 días",
+      "popular": false
+    },
+    {
+      "id": "custom-work",
+      "title": "Trabajo a Medida",
+      "slug": "custom-work",
+      "description": "Creación de prendas exclusivas desde cero",
+      "icon": "FiFeather",
+      "category": "custom",
+      "priceRange": {
+        "min": 50,
+        "max": 200,
+        "currency": "EUR"
+      },
+      "features": [
+        "Diseño personalizado",
+        "Patrones exclusivos",
+        "Selección de tejidos",
+        "Pruebas de ajuste",
+        "Acabados profesionales"
+      ],
+      "deliveryTime": "10-15 días",
+      "popular": false
+    }
+  ],
+  
+  "testimonials": [
+    {
+      "id": 1,
+      "name": "María García",
+      "role": "Cliente desde 2020",
+      "content": "Excelente trabajo con mi vestido de novia. Lo ajustaron perfectamente y el acabado fue impecable. ¡Totalmente recomendados!",
+      "rating": 5,
+      "date": "2024-01-15",
+      "avatar": "/avatars/1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Carlos Rodríguez",
+      "role": "Ejecutivo",
+      "content": "Arreglaron todos mis trajes de trabajo. Profesionales, puntuales y con precios justos. Mi sastre de confianza.",
+      "rating": 5,
+      "date": "2024-01-10",
+      "avatar": "/avatars/2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Ana López",
+      "role": "Estilista",
+      "content": "Transformaron varias prendas vintage para mis clientes. Creatividad y calidad excepcionales.",
+      "rating": 4,
+      "date": "2024-01-05",
+      "avatar": "/avatars/3.jpg"
+    }
+  ],
+  
+  "team": [
+    {
+      "id": 1,
+      "name": "Elena Martínez",
+      "role": "Costurera Principal",
+      "bio": "Más de 20 años de experiencia en alta costura y arreglos especializados.",
+      "specialties": ["Alta costura", "Vestidos de novia", "Transformaciones"],
+      "experience": "20 años",
+      "image": "/team/elena.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Javier Ruiz",
+      "role": "Especialista en Arreglos",
+      "bio": "Especializado en arreglos rápidos y eficientes para el día a día.",
+      "specialties": ["Arreglos rápidos", "Cierres", "Remiendos"],
+      "experience": "15 años",
+      "image": "/team/javier.jpg"
+    }
+  ],
+  
+  "contact": {
+    "address": {
+      "street": "Calle de la Costura, 123",
+      "city": "Madrid",
+      "postalCode": "28012",
+      "country": "España"
+    },
+    "phoneNumbers": [
+      {
+        "type": "principal",
+        "number": "+34 912 345 678",
+        "formatted": "912 345 678"
+      },
+      {
+        "type": "móvil",
+        "number": "+34 600 123 456",
+        "formatted": "600 123 456"
+      }
+    ],
+    "emails": [
+      {
+        "type": "general",
+        "address": "info@costuraperfecta.com"
+      },
+      {
+        "type": "presupuestos",
+        "address": "presupuestos@costuraperfecta.com"
+      }
+    ],
+    "businessHours": [
+      {
+        "days": "Lunes a Viernes",
+        "hours": "9:00 - 19:00"
+      },
+      {
+        "days": "Sábados",
+        "hours": "10:00 - 14:00"
+      },
+      {
+        "days": "Domingos",
+        "hours": "Cerrado"
+      }
+    ],
+    "socialMedia": [
+      {
+        "platform": "Instagram",
+        "handle": "@costuraperfecta",
+        "url": "https://instagram.com/costuraperfecta",
+        "icon": "FiInstagram"
+      },
+      {
+        "platform": "Facebook",
+        "handle": "Costura Perfecta",
+        "url": "https://facebook.com/costuraperfecta",
+        "icon": "FiFacebook"
+      },
+      {
+        "platform": "Pinterest",
+        "handle": "Costura Perfecta",
+        "url": "https://pinterest.com/costuraperfecta",
+        "icon": "FiPinterest"
+      }
+    ]
+  },
+  
+  "faq": [
+    {
+      "question": "¿Cuánto tiempo tardan en hacer un arreglo?",
+      "answer": "Los arreglos básicos suelen estar listos en 24-48 horas. Las transformaciones y trabajos especiales pueden tardar entre 3 y 10 días, dependiendo de la complejidad.",
+      "category": "general"
+    },
+    {
+      "question": "¿Cómo funciona el proceso de presupuesto?",
+      "answer": "Puedes traer la prenda a nuestro taller para evaluación gratuita, enviar fotos por WhatsApp, o usar nuestro formulario online. Te damos un presupuesto detallado sin compromiso.",
+      "category": "presupuestos"
+    },
+    {
+      "question": "¿Trabajan con todo tipo de tejidos?",
+      "answer": "Sí, trabajamos con algodón, lana, seda, lino, poliéster, cuero, y tejidos delicados como encaje y gasa. Cada material requiere técnicas específicas que dominamos.",
+      "category": "materiales"
+    },
+    {
+      "question": "¿Ofrecen servicio a domicilio?",
+      "answer": "Actualmente trabajamos en taller, pero ofrecemos servicio de recogida y entrega en un radio de 10km sin coste adicional. Consulta disponibilidad en tu zona.",
+      "category": "servicio"
+    }
+  ],
+  
+  "pricing": {
+    "currency": "SOL",
+    "disclaimer": "Los precios son orientativos y pueden variar según la complejidad del trabajo y el estado de la prenda.",
+    "packages": [
+      {
+        "name": "Básico",
+        "price": 30,
+        "description": "Ideal para arreglos simples",
+        "features": [
+          "Hasta 3 arreglos básicos",
+          "Materiales incluidos",
+          "Entrega en 48h",
+          "Garantía 1 mes"
+        ]
+      },
+      {
+        "name": "Premium",
+        "price": 70,
+        "description": "Para transformaciones complejas",
+        "popular": true,
+        "features": [
+          "Transformaciones completas",
+          "Tejidos especiales",
+          "Asesoramiento de estilo",
+          "Entrega en 5 días",
+          "Garantía 3 meses"
+        ]
+      },
+      {
+        "name": "Personalizado",
+        "price": 120,
+        "description": "Trabajos a medida exclusivos",
+        "features": [
+          "Diseño personalizado",
+          "Tejidos premium",
+          "Pruebas de ajuste",
+          "Entrega en 10-15 días",
+          "Garantía 6 meses"
+        ]
+      }
+    ]
+  }
+}
