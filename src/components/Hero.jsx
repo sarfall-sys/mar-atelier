@@ -4,63 +4,95 @@ import { BiStar, BiSolidStar } from "react-icons/bi";
 function Hero() {
   const services = DataLoader.getServices();
   const testimonials = DataLoader.getTestimonials();
+  
   return (
-    <div className="text-center py-12">
-      <h1 className="text-4xl md:text-5xl font-bold text-dark md-6">
-        Bienvenidos a{" "}
-        <span className="text-primary">
-          Mar<span className="text-gray">Atelier</span>
-        </span>
-      </h1>
-      <p className="mt-4 text-lg text-gray-600">
-        Maxima calidad en confección a medida. Diseños exclusivos que reflejan
-        tu estilo único.
-      </p>
-      <a
-        href="https://wa.me/34600123456"
-        className="bg-accent text-white px-4 py-2 m-2 rounded-sm"
-      >
-        Agenda tu cita
-      </a>
-      {/*Services Preview */}
-      <section className="mt-12 max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md">
-        <h2 className="text-2xl font-semibold mb-4 text-primary">
+    <div className="min-h-screen bg-secondary overflow-x-hidden">
+      {/* Hero Header */}
+      <div className="text-center pt-20 pb-16 px-4">
+        <div className="animate-fade-in">
+          <h1 className="text-5xl md:text-7xl font-bold text-gray-800 mb-6 leading-tight">
+            Bienvenidos a{" "}
+            <span className="bg-primary bg-clip-text text-transparent">
+              Mar<span className="text-gray-400">Atelier</span>
+            </span>
+          </h1>
+          <p className="mt-6 text-xl md:text-2xl text-gray-600 max-w-2xl mx-auto leading-relaxed">
+            Máxima calidad en confección a medida. Diseños exclusivos que reflejan
+            tu estilo único.
+          </p>
+          <a
+            href="https://wa.me/34600123456"
+            className="inline-block mt-8 bg-primary from-rose-600 to-pink-500 text-white px-8 py-4 rounded-full font-semibold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+          >
+            Agenda tu cita
+          </a>
+        </div>
+      </div>
+
+      {/* Services Preview */}
+      <section className="max-w-6xl mx-auto px-4 py-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-dark">
           Nuestros Servicios Destacados
         </h2>
-        <div className="flex flex-col gap-4">
+        <div className="grid md:grid-cols-3 gap-8 ">
           {services.slice(0, 3).map((service, index) => (
-            <div key={index} className="mb-6">
-              <h3 className="text-xl font-semibold text-dark">
-                {service.title}
-              </h3>
-              <p className="text-base text-gray-700">{service.description}</p>
-              <img src={service.image_url} alt={service.title} className="w-full h-48 object-cover rounded-md" />
+            <div 
+              key={index} 
+              className="group bg-light rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+            >
+              <div className="relative overflow-hidden h-64">
+                <img 
+                  src={service.image_url} 
+                  alt={service.title} 
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-linear-to-t from-accent/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              </div>
+              <div className="p-6">
+                <h3 className="text-2xl font-bold text-gray-dark mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-gray leading-relaxed">
+                  {service.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>
       </section>
-      {/*testmoniañs */}
-      <section className="mt-12 max-w-4xl mx-auto p-6 bg-white rounded-lg shadow-md">
-          <h2 className="text-2xl font-semibold mb-4 text-primary">
-            Testimonios de Clientes
-          </h2>
-          <div className="flex flex-row gap-4">
-            {testimonials.slice(0, 3).map((testimonial, index) => (
-              <div key={index} className="mb-6">
-                <h3 className="font-semibold">{testimonial.name}</h3>
-                <span>{testimonial.date}</span>
+
+      {/* Testimonials */}
+      <section className="max-w-6xl mx-auto px-4 py-16">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
+          Testimonios de Clientes
+        </h2>
+        <div className="grid md:grid-cols-3 gap-8 BG-SE">
+          {testimonials.slice(0, 3).map((testimonial, index) => (
+            <div 
+              key={index} 
+              className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100"
+            >
+              <div className="flex items-center gap-1 mb-4">
                 {[...Array(testimonial.rating)].map((_, i) => (
-                  <BiSolidStar key={i} className="inline text-yellow-500" />
+                  <BiSolidStar key={i} className="text-yellow-400 text-xl" />
                 ))}
-                <p className="text-base italic text-gray-700">
-                  "{testimonial.content}"
-                </p>
               </div>
-            ))}
-          </div>
+              <p className="text-gray-700 italic mb-6 text-lg leading-relaxed">
+                "{testimonial.content}"
+              </p>
+              <div className="border-t border-gray-100 pt-4">
+                <h3 className="font-bold text-gray-800 text-lg">
+                  {testimonial.name}
+                </h3>
+                <span className="text-gray-500 text-sm">{testimonial.date}</span>
+              </div>
+            </div>
+          ))}
+        </div>
       </section>
     </div>
   );
 }
+
 
 export default Hero;

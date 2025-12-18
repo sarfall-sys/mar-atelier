@@ -1,5 +1,7 @@
 import React from "react";
 import DataLoader from "../utils/dataLoader";
+import { BsHouse } from "react-icons/bs";
+import { BiPhone, BiSolidBuildingHouse ,BiMessageAltDetail,BiMailSend} from "react-icons/bi";
 import Header from "../components/Header";
 function Contact() {
   const contactInfo = DataLoader.getContactInfo(); //contact info is an object
@@ -16,9 +18,15 @@ function Contact() {
       <section className="max-w-3xl mx-auto px-4">
         <div className="flex flex-row">
           <div className="basis-1/3">
+            <h1 className="text-3xl font-bold text-dark">Ubicanos en :</h1>
+
             {address && (
               <div className="mb-6 ">
-                <h1 className="text-lg font-bold text-primary">Ubicanos en :</h1>
+                <BiSolidBuildingHouse
+                  className="inline-block mr-2 text-primary"
+                  size={24}
+                />
+
                 <p className="text-lg">{address.city}</p>
                 <p className="text-lg">{address.street}</p>
                 <p className="text-lg">{address.zip}</p>
@@ -29,7 +37,7 @@ function Contact() {
               phone.map((number, index) => (
                 <div key={index} className="mb-6">
                   <h1 className="text-lg font-semibold mb-2 text-primary">
-                    Teléfono {number.type}
+                    <BiPhone className="inline-block mr-2 text-primary" size={24} /> 
                   </h1>
                   <p className="text-lg">{number.number}</p>
                 </div>
@@ -39,7 +47,11 @@ function Contact() {
               email.map((emailAddress, index) => (
                 <div key={index} className="mb-6">
                   <h1 className="text-lg font-semibold mb-2 text-primary">
-                    Correo {emailAddress.type}
+                    <BiMailSend
+                      className="inline-block mr-2 text-primary"
+                      size={24}
+                    />{" "}
+                    
                   </h1>
                   <p className="text-lg">{emailAddress.address}</p>
                 </div>
@@ -48,10 +60,12 @@ function Contact() {
           {/*Form  */}
 
           <div className="basis-2/3">
-            <h2 className="text-3xl font-semibold mb-4 text-accent">Formulario</h2>
+            <h2 className="text-3xl font-semibold mb-4 text-primary">
+              Formulario
+            </h2>
             <form
               action=""
-              className="border-radius border-accent rounded-sm p-4 shadow-md bg-secondary"
+              className="border-radius border-primary rounded-md p-4 shadow-md bg-secondary"
             >
               <div className="mb-4 ">
                 <input type="text" placeholder="Nombre y apellido" />
@@ -86,7 +100,7 @@ function Contact() {
               </div>
               <button
                 type="submit"
-                className="bg-accent text-white px-4 py-2 rounded-sm"
+                className="bg-primary text-white px-4 py-2 rounded-sm"
               >
                 Enviar
               </button>

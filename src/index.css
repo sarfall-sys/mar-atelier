@@ -15,7 +15,7 @@
 @theme {
   --color-*: initial;
   --color-primary: #ba55d3;       /* Stronger purple for better contrast */
-  --color-secondary: #dda0dd;     /* Supporting purple */
+  --color-secondary: #EBCEF0;     /* Supporting purple */
   --color-accent: #ec4899;        /* Pink accent that pops */
   
   /* Neutral Scale (3 shades only) */

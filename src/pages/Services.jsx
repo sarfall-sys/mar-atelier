@@ -4,51 +4,79 @@ import DataLoader from "../utils/dataLoader";
 import Header from "../components/Header";
 function Services() {
   const services = DataLoader.getServices();
+  
   return (
-    <>
+    <div className="min-h-screen bg-linear-to-b from-rose-50 to-white">
       <Header name="Nuestros Servicios" />
-      <section className="max-w-4xl mx-auto my-12 p-6 bg-white rounded-lg shadow-md">
-        {services.map((service, index) => (
-          <div
-            key={index}
-            className="p-4 flex flex-col md:flex-row gap-4 mb-4 bg-secondary rounded-lg"
-          >
-            <div className="mb-4 ">
-              <h3 className="text-xl font-semibold text-primary">
-                {service.title}
-              </h3>
-              <p className="text-base">{service.description}</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-              {service.features && (
-                <ul className=" list-inside mt-2 col-span-2">
-                  {service.features.map((feature, Index) => (
-                    <li key={Index} className="text-dark font-light">
-                      <RxRadiobutton className="inline mr-2 text-accent font-bold" />
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
-              )}
-            </div>
-            <div>
-              <span className="text-lg font-medium text-primary">Desde: </span>
-              <span className="text-lg font-semibold text-dark">
-                {service.priceRange.min} {service.priceRange.currency}
-              </span>
-            </div>
-          </div>
-        ))}
+      
+      <section className="max-w-6xl mx-auto px-4 py-16">
+        <div className="space-y-8">
+          {services.map((service, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border border-rose-100"
+            >
+              <div className="grid md:grid-cols-2 gap-0">
+                {/* Image Section */}
+                <div className="relative h-64 md:h-auto overflow-hidden group">
+                  <img
+                    src={service.image_url}
+                    alt={service.title}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-linear-to-t from-rose-900/30 to-transparent"></div>
+                </div>
 
-        <a
-          className="mt-4 w-full md:w-auto bg-accent text-white px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors "
-          href="/contact"
-        >
-          Consultar ahora
-        </a>
+                {/* Content Section */}
+                <div className="p-8 flex flex-col justify-between bg-linear-to-br from-white to-rose-50/30">
+                  <div>
+                    <h3 className="text-3xl font-bold text-gray-800 mb-4">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-600 text-lg leading-relaxed mb-6">
+                      {service.description}
+                    </p>
+
+                    {/* Price */}
+                    <div className="inline-block bg-primary text-white px-6 py-3 rounded-full mb-6 shadow-md">
+                      <span className="text-sm font-medium">Desde: </span>
+                      <span className="text-xl font-bold">
+                        {service.priceRange.min} {service.priceRange.currency}
+                      </span>
+                    </div>
+
+                    {/* Features */}
+                    {service.features && (
+                      <ul className="space-y-3">
+                        {service.features.map((feature, featureIndex) => (
+                          <li
+                            key={featureIndex}
+                            className="flex items-start text-gray-700"
+                          >
+                            <RxRadiobutton className="text-primary text-xl mr-3 mt-1 flex-shrink-0" />
+                            <span className="text-base leading-relaxed">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    )}
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* CTA Button */}
+        <div className="text-center mt-12">
+          <a
+            className="inline-block bg-primary text-light px-10 py-4 rounded-full font-bold text-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300"
+            href="/contact"
+          >
+            Consultar ahora
+          </a>
+        </div>
       </section>
-    </>
+    </div>
   );
 }
-
 export default Services;
