@@ -54,11 +54,12 @@
       "slug": "basic-repairs",
       "description": "Reparaciones rápidas y eficientes para el día a día",
       "icon": "FiScissors",
+      "image_url": "www.example.com/images/basic-repairs.jpg",
       "category": "repairs",
       "priceRange": {
-        "min": 5,
+        "min": 20,
         "max": 20,
-        "currency": "EUR"
+        "currency": "PEN"
       },
       "features": [
         "Bajos de pantalones",
@@ -78,9 +79,9 @@
       "icon": "FiRefreshCw",
       "category": "transformations",
       "priceRange": {
-        "min": 15,
+        "min": 40,
         "max": 50,
-        "currency": "EUR"
+        "currency": "PEN"
       },
       "features": [
         "Cambio de tallas",
@@ -100,9 +101,9 @@
       "icon": "FiStar",
       "category": "special",
       "priceRange": {
-        "min": 20,
+        "min": 80,
         "max": 100,
-        "currency": "EUR"
+        "currency": "PEN"
       },
       "features": [
         "Trajes y vestidos formales",
@@ -122,9 +123,9 @@
       "icon": "FiFeather",
       "category": "custom",
       "priceRange": {
-        "min": 50,
+        "min": 150,
         "max": 200,
-        "currency": "EUR"
+        "currency": "PEN"
       },
       "features": [
         "Diseño personalizado",
@@ -317,6 +318,17 @@
           "Garantía 6 meses"
         ]
       }
+    ]
+  },
+  "about" : {
+    "companyHistory": "Costura Perfecta fue fundada en 2005 por Elena Martínez, una apasionada de la costura con más de 20 años de experiencia. Desde entonces, hemos crecido hasta convertirnos en un referente en servicios de costura y arreglos en Madrid.",
+    "mission": "Nuestra misión es ofrecer servicios de costura de alta calidad que realcen la belleza y funcionalidad de cada prenda, adaptándonos a las necesidades individuales de nuestros clientes.",
+    "vision": "Ser el taller de costura más confiable y reconocido en España, conocido por nuestra excelencia, innovación y compromiso con la satisfacción del cliente.",
+    "values": [
+      "Calidad: Nos esforzamos por superar las expectativas en cada proyecto.",
+      "Profesionalismo: Contamos con un equipo altamente capacitado y dedicado.",
+      "Atención al Cliente: Valoramos la comunicación abierta y el servicio personalizado.",
+      "Sostenibilidad: Promovemos prácticas responsables y el cuidado del medio ambiente."
     ]
   }
 }
