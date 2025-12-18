@@ -5,7 +5,8 @@
     "logo": "/logo.png",
     "favicon": "/favicon.ico",
     "language": "es",
-    "currency": "EUR"
+    "currency": "EUR",
+    "heroImage": "https://images.unsplash.com/photo-1539109136881-3be0616acf4b?w=1920&auto=format&fit=crop"
   },
   
   "routes": [
@@ -54,7 +55,7 @@
       "slug": "basic-repairs",
       "description": "Reparaciones rápidas y eficientes para el día a día",
       "icon": "FiScissors",
-      "image_url": "www.example.com/images/basic-repairs.jpg",
+      "image_url": "https://images.pexels.com/photos/934069/pexels-photo-934069.jpeg",
       "category": "repairs",
       "priceRange": {
         "min": 20,
@@ -77,6 +78,8 @@
       "slug": "alterations",
       "description": "Moderniza y ajusta tus prendas a la medida",
       "icon": "FiRefreshCw",
+      "image_url": "https://images.pexels.com/photos/3738084/pexels-photo-3738084.jpeg",
+
       "category": "transformations",
       "priceRange": {
         "min": 40,
@@ -99,6 +102,8 @@
       "slug": "special-services",
       "description": "Trabajos especializados para ocasiones importantes",
       "icon": "FiStar",
+      "image_url": "https://images.unsplash.com/photo-1595777457583-95e059d581b8",
+
       "category": "special",
       "priceRange": {
         "min": 80,
@@ -121,6 +126,7 @@
       "slug": "custom-work",
       "description": "Creación de prendas exclusivas desde cero",
       "icon": "FiFeather",
+      "image_url": "https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg",
       "category": "custom",
       "priceRange": {
         "min": 150,
@@ -321,7 +327,7 @@
     ]
   },
   "about" : {
-    "companyHistory": "Costura Perfecta fue fundada en 2005 por Elena Martínez, una apasionada de la costura con más de 20 años de experiencia. Desde entonces, hemos crecido hasta convertirnos en un referente en servicios de costura y arreglos en Madrid.",
+    "history": "Costura Perfecta fue fundada en 2005 por Elena Martínez, una apasionada de la costura con más de 20 años de experiencia. Desde entonces, hemos crecido hasta convertirnos en un referente en servicios de costura y arreglos en Madrid.",
     "mission": "Nuestra misión es ofrecer servicios de costura de alta calidad que realcen la belleza y funcionalidad de cada prenda, adaptándonos a las necesidades individuales de nuestros clientes.",
     "vision": "Ser el taller de costura más confiable y reconocido en España, conocido por nuestra excelencia, innovación y compromiso con la satisfacción del cliente.",
     "values": [

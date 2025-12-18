@@ -14,8 +14,8 @@ function Contact() {
       <Header name="Contacto" />
       {/*Info */}
       <section className="max-w-3xl mx-auto px-4">
-        <div className="flex grid-cols-2 justify-between ">
-          <div className="flex gap-2 col-span-1 flex-col">
+        <div className="flex flex-row">
+          <div className="basis-1/3">
             {address && (
               <div className="mb-6 ">
                 <h1 className="text-lg font-bold text-primary">Ubicanos en :</h1>
@@ -47,7 +47,7 @@ function Contact() {
           </div>
           {/*Form  */}
 
-          <div className="flex gap-2 flex-col col-span-1">
+          <div className="basis-2/3">
             <h2 className="text-3xl font-semibold mb-4 text-accent">Formulario</h2>
             <form
               action=""

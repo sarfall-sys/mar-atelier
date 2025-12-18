@@ -11,10 +11,10 @@ function Services() {
         {services.map((service, index) => (
           <div
             key={index}
-            className="p-4 flex grid-cols-1 gap-4 mb-4 bg-secondary rounded-lg"
+            className="p-4 flex flex-col md:flex-row gap-4 mb-4 bg-secondary rounded-lg"
           >
-            <div className="mb-4">
-              <h3 className="text-xl font-semibold   mb-2 text-primary">
+            <div className="mb-4 ">
+              <h3 className="text-xl font-semibold text-primary">
                 {service.title}
               </h3>
               <p className="text-base">{service.description}</p>
