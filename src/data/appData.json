@@ -237,19 +237,19 @@
         "platform": "Instagram",
         "handle": "@costuraperfecta",
         "url": "https://instagram.com/costuraperfecta",
-        "icon": "FiInstagram"
+        "icon": "FaInstagram "
       },
       {
         "platform": "Facebook",
         "handle": "Costura Perfecta",
         "url": "https://facebook.com/costuraperfecta",
-        "icon": "FiFacebook"
+        "icon": "FaFacebookF "
       },
       {
-        "platform": "Pinterest",
-        "handle": "Costura Perfecta",
-        "url": "https://pinterest.com/costuraperfecta",
-        "icon": "FiPinterest"
+        "platform": "WhatsApp",
+        "handle": "+34 600 123 456",
+        "url": "https://wa.me/34600123456",
+        "icon": "FaWhatsapp "
       }
     ]
   },

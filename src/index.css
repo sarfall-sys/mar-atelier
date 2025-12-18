@@ -4,37 +4,28 @@
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
+    font-family: "Montserrat", sans-serif;
+
     transition: background-color 0.3s, color 0.3s;
   }
+
 }
 
-[data-theme="light"] {
-  --bg-color: var(--color-neutral);
-  --text-color: var(--color-neutral-dark);
-}
-
-[data-theme="dark"] {
-  --bg-color: var(--color-neutral-dark);
-  --text-color: var(--color-neutral-light);
-}
 
 @theme {
   --color-*: initial;
-  --color-primary: #f27a8d;
-  --color-primary-light: #f8a9b4;
-  --color-primary-dark: #d62f5a;
-  --color-secondary: #bd95f0;
-  --color-secondary-light: #d6bff7;
-  --color-secondary-dark: #8c4ad9;
-  --color-accent: #f5c057;
-  --color-accent-light: #f9d98f;
-  --color-accent-dark: #e18c1a;
-  --color-neutral: #e8e9ef;
-  --color-neutral-dark: #f5f5f8;
-  --color-neutral-light: #bcbdc9;
+  --color-primary: #ba55d3;       /* Stronger purple for better contrast */
+  --color-secondary: #dda0dd;     /* Supporting purple */
+  --color-accent: #ec4899;        /* Pink accent that pops */
+  
+  /* Neutral Scale (3 shades only) */
+  --color-light: #f9f9f9;         /* For backgrounds */
+  --color-gray: #6b7280;          /* For secondary text */
+  --color-dark: #111827;          /* For primary text */
+  
+  /* Functional Colors (2 states) */
+  --color-success: #10b981;       /* Green for success */
+  --color-error: #ef4444;         /* Red for errors */
 }
 
 @font-face {
@@ -43,3 +34,4 @@
   font-weight: normal;
   font-style: normal;
 }
+

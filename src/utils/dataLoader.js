@@ -22,6 +22,9 @@ class DataLoader {
         return appData.about;
     }
 
+    static getContactInfo() {
+        return appData.contact;
+    }
 }
 
 

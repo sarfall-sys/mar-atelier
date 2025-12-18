@@ -1,9 +1,12 @@
-import React from 'react'
-
+import React from "react";
+import Banner from "../components/Banner.jsx";
+import Hero from "../components/Hero.jsx";
 function Home() {
   return (
-    <div>Home</div>
-  )
+    <div>
+      <Hero />
+    </div>
+  );
 }
 
-export default Home
+export default Home;
