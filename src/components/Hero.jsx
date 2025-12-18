@@ -6,7 +6,7 @@ function Hero() {
   const testimonials = DataLoader.getTestimonials();
   
   return (
-    <div className="min-h-screen bg-secondary overflow-x-hidden">
+    <div className="min-h-screen bg-light overflow-x-hidden">
       {/* Hero Header */}
       <div className="text-center pt-20 pb-16 px-4">
         <div className="animate-fade-in">

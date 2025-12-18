@@ -15,8 +15,8 @@
 @theme {
   --color-*: initial;
   --color-primary: #ba55d3;       /* Stronger purple for better contrast */
-  --color-secondary: #EBCEF0;     /* Supporting purple */
-  --color-accent: #ec4899;        /* Pink accent that pops */
+  --color-secondary: #F8D7FF;     /* Supporting purple */
+  --color-accent: #F1DD00;        /* Pink accent that pops */
   
   /* Neutral Scale (3 shades only) */
   --color-light: #f9f9f9;         /* For backgrounds */
@@ -35,3 +35,10 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Eoboto';
+  font-stretch: ; /* Note that font-stretch is a % of normal width */
+  font-style: normal; /* See note below */
+  font-weight: normal;
+  src: url(roboto.woff2) format('woff2');
+}

@@ -14,14 +14,17 @@ function Navbar() {
   };
   return (
     <>
-      <nav className="sticky top-0 z-50 bg-light border-b border-primary shadow-md px-4 py-3">
+      <nav className="sticky top-0 z-50 bg-primary border-b border-primary shadow-md px-4 py-3 rounded-full">
         {/*Container */}
         <div className="flex grid-cols-2 justify-between items-center">
           {/*Logo */}
           <Link to="/" className="flex items-center gap-2">
+          <span className="flex items-center justify-center rounded-full bg-accent p-2">
             <FiScissors size={24} className="text-primary" />
-            <h1 className="text-xl font-elegant font-bold text-gray">
-              <span className="font-elegant text-primary">Mar</span>Atelier
+
+          </span>
+            <h1 className="text-xl font-elegant font-medium text-light">
+              <span className="font-elegant ">Mar</span>Atelier
             </h1>
           </Link>
 
@@ -34,10 +37,10 @@ function Navbar() {
                   <Link
                     key={index}
                     to={route.path}
-                    className="text-gray hover:text-dark px-3 py-2 text-sm font-medium relative group transition-colors duration-200"
+                    className="text-light hover:text-accent  px-3 py-2 text-sm font-medium relative group transition-colors duration-200"
                   >
                     {route.name}
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary group-hover:w-full transition-all duration-200"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent group-hover:w-full transition-all duration-200"></span>
                   </Link>
                 );
               })}
