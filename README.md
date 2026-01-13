@@ -25,6 +25,8 @@ It showcases the atelier’s products through a **catalog section** and provides
 
 ---
 
+
+
 ## 📊 Catalog Data
 The catalog section uses data stored in a **JSON file**, which is imported into the React components.  
 This approach allows easy updates to products without changing application logic.
@@ -36,7 +38,7 @@ Example structure:
   "name": "Product Name",
   "description": "Product description"
 }
-
+```
 ---
 ##📧 Contact Form
 
