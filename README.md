@@ -40,7 +40,7 @@ Example structure:
 }
 ```
 ---
-##📧 Contact Form
+📧 Contact Form
 
 The contact form is implemented using EmailJS.
 
@@ -55,14 +55,14 @@ The email is received in a test email account
 ⚠️ Note: EmailJS credentials are used for testing purposes only. In production, environment variables should be used to secure keys.
 
 ---
-##🚀 Future Improvements
+🚀 Future Improvements
 -Backend integration
 -Admin panel for catalog management
 -Database integration
 -Improved form validation
 -Testing
 ---
-## 📄 License
+📄 License
 If you want, I can:
 - Customize it for **school submission**
 - Make it **shorter and cleaner**
