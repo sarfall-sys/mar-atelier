@@ -1,16 +1,70 @@
-# React + Vite
+# 📌 MarAtelier Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📖 Description
+This project is a **React.js landing page** developed for an atelier.  
+It showcases the atelier’s products through a **catalog section** and provides a **contact form** that allows users to send messages via email.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎯 Features
+- Responsive landing page
+- Product catalog loaded from a JSON file
+- Contact form with email sending functionality
+- Email testing using EmailJS
+- Component-based structure using React
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Technologies Used
+- React.js  
+- JavaScript (ES6+)  
+- HTML5  
+- CSS3  
+- EmailJS  
+- JSON  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📊 Catalog Data
+The catalog section uses data stored in a **JSON file**, which is imported into the React components.  
+This approach allows easy updates to products without changing application logic.
+
+Example structure:
+```json
+{
+  "id": 1,
+  "name": "Product Name",
+  "description": "Product description"
+}
+
+---
+##📧 Contact Form
+
+The contact form is implemented using EmailJS.
+
+Functionality:
+
+Users enter their name, email, and message
+
+The message is sent using EmailJS
+
+The email is received in a test email account
+
+⚠️ Note: EmailJS credentials are used for testing purposes only. In production, environment variables should be used to secure keys.
+
+---
+##🚀 Future Improvements
+-Backend integration
+-Admin panel for catalog management
+-Database integration
+-Improved form validation
+-Testing
+---
+## 📄 License
+If you want, I can:
+- Customize it for **school submission**
+- Make it **shorter and cleaner**
+- Adapt it to **your exact React folder structure**
+- Add **screenshots section**
+
+Just tell me 👍
