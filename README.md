@@ -5,7 +5,9 @@ This project is a **React.js landing page** developed for an atelier.
 It showcases the atelier’s products through a **catalog section** and provides a **contact form** that allows users to send messages via email.
 
 ---
-
+##  🌐 Live Demo
+🔗 **Live Website:** https://maratelier.netlify.app/
+---
 ## 🎯 Features
 - Responsive landing page
 - Product catalog loaded from a JSON file
